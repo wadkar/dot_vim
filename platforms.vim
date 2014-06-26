@@ -23,7 +23,7 @@ elseif has('gui_macvim')
 
   " Custom Source Code font for Powerline
   " From: https://github.com/Lokaltog/powerline-fonts
-  set guifont=Anonymous\ Pro\ Minus:h11
+  set guifont=Anonymice\ Powerline:h12
 
   " Hide Toolbar in MacVim
   if has("gui_running")
