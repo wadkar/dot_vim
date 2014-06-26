@@ -132,8 +132,8 @@ nnoremap <leader>fef mx=ggG='x
 
 " Format a json file with Python's built in json.tool.
 " from https://github.com/spf13/spf13-vim/blob/3.0/.vimrc#L390
-nnoremap <leader>jt <Esc>:%!underscore print<CR><Esc>:set filetype=json<CR>
-nnoremap <leader>jts <Esc>:%!underscore print --strict<CR><Esc>:set filetype=json<CR>
+"nnoremap <leader>jt <Esc>:%!underscore print<CR><Esc>:set filetype=json<CR>
+"nnoremap <leader>jts <Esc>:%!underscore print --strict<CR><Esc>:set filetype=json<CR>
 
 " Split window vertically or horizontally *and* switch to the new split!
 nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>
@@ -154,8 +154,8 @@ cnoremap w' w<CR>
 nnoremap Q @@
 
 " Removes doc lookup mapping because it's easy to fat finger and never useful.
-nnoremap K k
-vnoremap K k
+"nnoremap K k
+"vnoremap K k
 
 " Toggle paste mode with F5
 nnoremap <silent> <F5> :set paste!<CR>
