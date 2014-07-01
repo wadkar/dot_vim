@@ -24,6 +24,8 @@ if has('persistent_undo')
   set undofile
   set undodir=~/.vim/.undo
 endif
+" Automatically change the current directory
+set autochdir
 
 " ---------------
 " UI
