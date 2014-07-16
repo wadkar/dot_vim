@@ -10,4 +10,4 @@ let g:gitgutter_sign_column_always = 1
 " map the hunking keys
 let g:gitgutter_map_keys = 1
 " map gitgutter toggl
-map <leader>ht :GitGutterLineHighlightsToggle<CR>
+map <leader>gt :GitGutterLineHighlightsToggle<CR>
