@@ -3,6 +3,11 @@ if exists('g:vundle_installing_plugins')
   finish
 endif
 
+" Use git only as our VCS provider
+let g:signify_vcs_list = ['git']
+" Enable line highlighting
+let g:signify_line_highlight = 1
+
 let g:signify_mapping_next_hunk = '<leader>gj'
 let g:signify_mapping_prev_hunk = '<leader>gk'
 let g:signify_mapping_toggle_highlight="<nop>"
