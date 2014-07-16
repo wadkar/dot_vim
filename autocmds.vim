@@ -18,10 +18,9 @@ if has("autocmd")
           \   exe "normal! g`\"" |
           \ endif
 
-    " Fix trailing whitespace in my most used programming langauges
-    autocmd BufWritePre *.py,*.coffee,*.rb,*.erb,*.md,*.scss,*.vim,Cakefile,
-          \*.hbs
-          \ silent! :StripTrailingWhiteSpace
+    " Fix trailing whitespace for following types of files
+    autocmd FileType c,cpp,python,php,vim,sh
+          \ autocmd BufWritePre :%s/\s\+$//e
 
     " Help mode bindings
     " <enter> to follow tag, <bs> to go back, and q to quit.
