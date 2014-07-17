@@ -25,7 +25,9 @@ if has('persistent_undo')
   set undodir=~/.vim/.undo
 endif
 " Automatically change the current directory
-set autochdir
+" This is not so useful because it changes even for help files and remote
+" files. Instead check the autocmd to specifically chdir on local files.
+" set autochdir
 
 " ---------------
 " UI
