@@ -164,4 +164,4 @@ nnoremap <silent> <F5> :set paste!<CR>
 iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
 
 " Quickly insert that annoying semicolon at the end
-inoremap ,; <C-o>m`<C-o>A;<C-o>``
+nnoremap ;; m`A;<esc>``
