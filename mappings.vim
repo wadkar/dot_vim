@@ -136,8 +136,8 @@ nnoremap <leader>fef mx=ggG='x
 "nnoremap <leader>jts <Esc>:%!underscore print --strict<CR><Esc>:set filetype=json<CR>
 
 " Split window vertically or horizontally *and* switch to the new split!
-nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>
-nnoremap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>
+" nnoremap <silent> <leader>hs :split<Bar>:wincmd j<CR>
+" nnoremap <silent> <leader>vs :vsplit<Bar>:wincmd l<CR>
 
 " Close the current window
 nnoremap <silent> <leader>sc :close<CR>
@@ -162,3 +162,6 @@ nnoremap <silent> <F5> :set paste!<CR>
 
 " Insert date
 iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
+
+" Quickly insert that annoying semicolon at the end
+inoremap ,; <C-o>m`<C-o>A;<C-o>``
