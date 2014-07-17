@@ -236,3 +236,23 @@ function! YankLineWithoutNewline()
 endfunction
 
 nnoremap <silent>yl :call YankLineWithoutNewline()<CR>
+
+" Helper function to determine if a file is worth lcd'ing into
+function! DoLcd()
+  " see last one liner for a short and sweet version
+  " " check the path first
+  " let l:fileDirPath = expand("%:p:h")
+  " " return false immediately if it is not a local file
+  " if l:fileDirPath =~ '^[^\/]' | return 0 | endif
+  " " return false if it is in the /tmp directory, i.e. a temperory file
+  " if l:fileDirPath =~ '^\/tmp'| return 0 | endif
+  " " ignore files inside the .git directory
+  " if l:fileDirPath =~ '\.git' | return 0 | endif
+  " " ignore help files as well
+  " if &ft =~ 'help' | return 0 | endif
+  " " otherwise return true
+  " return 1
+  return ! ( expand("%:p:h") =~ '^[^\/]\|^\/tmp\|\.git\|^\/private\/tmp'
+        \ && &ft =~ 'help'
+        \ )
+endfunction
