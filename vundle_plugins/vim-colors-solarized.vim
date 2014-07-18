@@ -1,5 +1,6 @@
 if exists('g:vundle_installing_plugins')
-  Plugin 'altercation/vim-colors-solarized'
+  " Plugin 'altercation/vim-colors-solarized'
+  Plugin 'file:///Users/sudhi/git/wadkar-solarized', {'rtp': 'vim-colors-solarized/' }
   finish
 endif
 
