@@ -5,9 +5,10 @@
 " ---------------
 " Color
 " ---------------
-" Use vundle_plugins/vim-color-solarized
-"set background=dark
-"colorscheme jellybeans
+" Make sure to install vundle_plugins/vim-color-solarized
+set background=dark
+colorscheme solarized
+
 " Force 256 color mode if available
 if $TERM =~ "-256color"
    set t_Co=256
